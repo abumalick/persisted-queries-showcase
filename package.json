@@ -1,6 +1,6 @@
 {
-  "name": "new",
-  "version": "0.1.0",
+  "name": "persisted-queries-showcase",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "apollo-cache-inmemory": "^1.5.1",
