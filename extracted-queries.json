@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "operations": [
+    {
+      "signature": "638a6e757933d0e452d6bcf2e9745b4fb4082744b54c19ca094d09862c56a593",
+      "document": "query getRates{rates(currency:\"\"){__typename currency rate}}",
+      "metadata": {
+        "engineSignature": "query getRates{rates(currency:\"\"){__typename currency rate}}"
+      }
+    }
+  ]
+}
