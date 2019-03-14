@@ -12,7 +12,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <Query
             query={gql`
-              {
+              query getRates {
                 rates(currency: "USD") {
                   currency
                   rate
