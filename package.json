@@ -8,6 +8,7 @@
     "apollo-link": "^1.2.10",
     "apollo-link-error": "^1.1.9",
     "apollo-link-http": "^1.5.13",
+    "apollo-link-persisted-queries": "^0.2.2",
     "graphql": "^14.1.1",
     "graphql-tag": "^2.10.1",
     "react": "^16.8.4",

@@ -3,6 +3,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 import { HttpLink } from 'apollo-link-http';
 import { onError } from 'apollo-link-error';
 import { ApolloLink } from 'apollo-link';
+import { createPersistedQueryLink } from "apollo-link-persisted-queries";
 
 const client = new ApolloClient({
   link: ApolloLink.from([
@@ -15,6 +16,7 @@ const client = new ApolloClient({
         );
       if (networkError) console.log(`[Network error]: ${networkError}`);
     }),
+    createPersistedQueryLink(),
     new HttpLink({
       uri: 'https://48p1r2roz4.sse.codesandbox.io',
     }),
