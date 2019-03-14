@@ -1,5 +1,6 @@
 {
   "name": "persisted-queries-showcase",
+  "homepage": "https://abumalick.github.io/persisted-queries-showcase",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -21,7 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "queries:extract": "apollo client:extract extracted-queries.json"
+    "queries:extract": "apollo client:extract extracted-queries.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,6 +36,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "apollo": "^2.6.1"
+    "apollo": "^2.6.1",
+    "gh-pages": "^2.0.1"
   }
 }
